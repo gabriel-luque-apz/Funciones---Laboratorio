@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app">
-      <h1>TypeScript Sandbox</h1>
-    </div>
+    <section class="section">
+      <div class="turno-display">
+        <h1 class="numero-turno">01</h1>
+        <p class="texto-turno">Por favor, acérquese al mostrador</p>
+      </div>
+      <div class="btns">
+        <button class="next">Siguiente</button>
+        <button class="previous">Anterior</button>
+        <button class="reset">reset</button>
+      </div>
+    </section>
+    <section>
+      <input type="number" class="box_number" min="0" max="10000">
+      <button class="change">Cambiar turno</button>
+    </section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
